@@ -5,8 +5,8 @@
 //Extra Motor Ports
 
 pros::Motor Catapult(9, MOTOR_GEARSET_36);
-pros::Motor intake1(2, MOTOR_GEARSET_6);
-pros::Motor intake2(11 , MOTOR_GEARSET_6);
+pros::Motor intake1(11, MOTOR_GEARSET_6);
+pros::Motor intake2(2 , MOTOR_GEARSET_6);
 pros::Motor roller(3, MOTOR_GEARSET_36);
 
 //ADI Ports
