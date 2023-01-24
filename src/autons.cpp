@@ -569,7 +569,7 @@ void Rave_Skills()
   chassis.set_turn_pid(-135, 75);
   chassis.wait_drive();
 
-  chassis.set_drive_pid(-31, 75);
+  chassis.set_drive_pid(-31, 50);
   chassis.wait_drive();
 
   //Aim at goal and fire
@@ -629,7 +629,7 @@ void Rave_Skills()
   chassis.set_turn_pid(95, 60);
   chassis.wait_drive();
 
-  chassis.set_drive_pid(-52, 40);
+  chassis.set_drive_pid(-52, 30);
   chassis.wait_drive();
 
   //Aim at goal and fire
@@ -674,10 +674,10 @@ void Rave_Skills()
   chassis.set_drive_pid(-5, 30);
   chassis.wait_drive();
 
-  chassis.set_turn_pid(180, 50);
+  chassis.set_turn_pid(185, 50);
   chassis.wait_drive();
 
-  chassis.set_drive_pid(-40, 50);
+  chassis.set_drive_pid(-40, 30);
   chassis.wait_drive();
 
   //Aim at goal and fire

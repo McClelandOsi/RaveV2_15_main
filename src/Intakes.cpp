@@ -76,6 +76,6 @@ void Intake_Auto(int x) {
 
 void Roller_Auto(int x) {
   
-  roller.move_relative(x, 127);
+  roller.move_relative(-x, 127);
 
 }
