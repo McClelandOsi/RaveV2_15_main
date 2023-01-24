@@ -7,7 +7,7 @@
 #include "ControllerPrinter.hpp"
 
 
-void PrintInfo(void *) {
+void Print_Info(void *) {
 
   pros::Imu imu_sensor(10);
   pros::Controller master (pros::E_CONTROLLER_MASTER);

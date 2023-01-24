@@ -185,6 +185,7 @@ void opcontrol() {
   pros::Task Roller(Roller_Control);
   pros::Task Catapult(Catapult_Control);
   pros::Task Endgame(Endgame_Fire); 
+  pros::Task ControllerPrinter(Print_Info);
   
 
   while (true) {

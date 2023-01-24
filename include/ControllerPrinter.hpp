@@ -3,4 +3,4 @@
 #include "api.h"
 #include "main.h"
 
-void PrintInfo(void *);
+void Print_Info(void *);
