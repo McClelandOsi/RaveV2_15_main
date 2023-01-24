@@ -3,7 +3,7 @@
 #include "main.h"
 #include "pros/misc.h"
 #include "EZ-Template/util.hpp"
-#include "Catapult.cpp"
+#include "Catapult.hpp"
 #include "ControllerPrinter.hpp"
 
 
@@ -17,9 +17,9 @@ void Print_Info(void *) {
 
       if(!(count % 25)) {
 
-        master.print(0, 0, "X-position of IMU: %f degrees\n", imu_sensor.get_heading());
+        //master.print(0, 0, "X-position of IMU: %f degrees\n", imu_sensor.get_heading());
 
-        master.print(0, 0, "Z-position of IMU: %f degress\n", imu_sensor.get_rotation());
+        //master.print(0, 0, "Z-position of IMU: %f degress\n", imu_sensor.get_rotation());
 
       }
 

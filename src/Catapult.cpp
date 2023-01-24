@@ -1,5 +1,6 @@
 #include "main.h"
 #include "pros/rtos.hpp"
+#include "Catapult.hpp"
 
 bool firing;
 
@@ -11,7 +12,7 @@ void Catapult_Control(void *) {
       Catapult.move_velocity(0);
     }
 
-    if (master.get_digital(DIGITAL_L1)) {
+    if (master.get_digital(pros::E_CONTROLLER_DIGITAL_L1)) {
       Catapult.move_velocity(100);
       Catapult.tare_position();
     }
