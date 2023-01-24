@@ -42,11 +42,12 @@
 //#include "okapi/api.hpp"
 //#include "pros/api_legacy.h"
 #include "EZ-Template/api.hpp"
-#include "autons.hpp" 
+#include "autons.hpp"  
 #include "Intakes.hpp"
 #include "Catapult.hpp"
 #include "Ports.hpp"
 #include "Endgame.hpp"
+#include "ControllerPrinter.hpp"
 
 // More includes here...
 //

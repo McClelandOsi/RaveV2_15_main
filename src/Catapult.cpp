@@ -3,18 +3,9 @@
 
 bool firing;
 
-
 void Catapult_Control(void *) {
   while (true) {
     Catapult.move_velocity(100);
-
-    if (master.get_digital(DIGITAL_L2))
-    {
-      Holder_Angle.set_value(true);
-    }
-    else {
-      Holder_Angle.set_value(false);
-    }
 
     if (limit_switch.get_value() < 30) {
       Catapult.move_velocity(0);

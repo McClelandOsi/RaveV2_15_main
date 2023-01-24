@@ -18,6 +18,8 @@ void wait_until_change_speed();
 void swing_example();
 void combining_movements();
 void interfered_example();
+void Rave_Auto_Left_FullSend();
+void Rave_Auto_Right_FullSend();
 
 void default_constants();
 void one_mogo_constants();
