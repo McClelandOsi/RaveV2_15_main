@@ -319,7 +319,7 @@ void Rave_Auto_Right() {
    chassis.wait_drive();
 
    pros::delay(150);
-
+  
    Catapult_Fire();
 
    pros::delay(500);
