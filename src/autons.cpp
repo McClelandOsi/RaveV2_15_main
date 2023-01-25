@@ -223,37 +223,33 @@ void Rave_Auto_Right() {
 
    Intake_Auto(100);
 
-   chassis.set_drive_pid(-20, 55);
+   chassis.set_drive_pid(-20, 75);
    chassis.wait_drive();
 
    Intake_Auto(0);
 
-   pros::delay(150);
-
-   chassis.set_turn_pid(-154, 55);
+   chassis.set_turn_pid(-154, 75);
    chassis.wait_drive();
-
-   pros::delay(150);
 
    chassis.set_drive_pid(8, 30);
    chassis.wait_drive();
   
-   pros::delay(500);
+   pros::delay(150);
 
    Catapult_Fire();
+
+   pros::delay(2000);
 
   /////////////
 
   ////// SECOND CATA SHOT ///////
-
-   pros::delay(2500);
 
    Intake_Auto(600);
 
    chassis.set_drive_pid(-8, 45);
    chassis.wait_drive();
 
-   chassis.set_turn_pid(45, 55);
+   chassis.set_turn_pid(45, 75);
    chassis.wait_drive();
 
    chassis.set_drive_pid(-10, 55);
@@ -262,13 +258,13 @@ void Rave_Auto_Right() {
    chassis.set_drive_pid(6, 55);
    chassis.wait_drive();
 
-   chassis.set_turn_pid(-154, 55);
+   chassis.set_turn_pid(-154, 75);
    chassis.wait_drive();
 
    chassis.set_drive_pid(4, 55);
    chassis.wait_drive();
 
-   pros::delay(750);
+   pros::delay(150);
 
    Catapult_Fire();
 
@@ -278,7 +274,7 @@ void Rave_Auto_Right() {
 
  /// THIRD CATA SHOT //////////
 
-   chassis.set_drive_pid(2, 70);
+   chassis.set_drive_pid(2, 55);
    chassis.wait_drive();
 
    chassis.set_drive_pid(-8, 75);
@@ -296,7 +292,7 @@ void Rave_Auto_Right() {
    chassis.set_drive_pid(2,75);
    chassis.wait_drive();
 
-   pros::delay(750);
+   pros::delay(150);
 
    Catapult_Fire();
 
@@ -312,27 +308,19 @@ void Rave_Auto_Right() {
    chassis.set_swing_pid(ez::LEFT_SWING, -178, 55);
    chassis.wait_drive();
 
-    pros::delay(250);
-
-   chassis.set_drive_pid(-20, 30);
+   chassis.set_drive_pid(-20, 15);
    chassis.wait_drive();
 
-   pros::delay(500);
-
-   chassis.set_drive_pid(20, 30);
+   chassis.set_drive_pid(20, 75);
    chassis.wait_drive();
 
    chassis.set_swing_pid(ez::RIGHT_SWING, -178, 55);
    chassis.wait_drive();
 
-   chassis.set_drive_pid(8.5, 75);
+   chassis.set_drive_pid(8.5, 55);
    chassis.wait_drive();
 
-   pros::delay(150);
-
    Intake_Auto(0);
-
-   pros::delay(150);
 
    chassis.set_turn_pid(-135, 55);
    chassis.wait_drive();
@@ -341,19 +329,19 @@ void Rave_Auto_Right() {
    chassis.set_drive_pid(6,55);
    chassis.wait_drive();
 
-   pros::delay(500);
+   pros::delay(150);
 
    Catapult_Fire();
 
-   pros::delay(750);
+   pros::delay(150);
 
   //////////////////////////
 
   //// ROLLER ///////
 
-   Intake_Auto(600);
+   Intake_Auto(0);
 
-   chassis.set_turn_pid(-45, 55);
+   chassis.set_turn_pid(-45, 75);
    chassis.wait_drive();
 
    chassis.set_drive_pid(48, 75);
@@ -362,13 +350,16 @@ void Rave_Auto_Right() {
    chassis.set_turn_pid(135, 75);
    chassis.wait_drive();
 
-   chassis.set_drive_pid(-18, 55);
+   chassis.set_drive_pid(-24, 55);
    chassis.wait_drive();
 
    chassis.set_turn_pid(180, 55);
    chassis.wait_drive();
 
-   pros::delay(750);
+   chassis.set_drive_pid(-20, 30);
+   chassis.wait_drive();
+
+   Roller_Auto(-450);
 
   ////////////////////
 }
