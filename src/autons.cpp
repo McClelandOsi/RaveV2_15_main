@@ -261,7 +261,7 @@ void Rave_Auto_Right() {
    chassis.set_turn_pid(-154, 65);
    chassis.wait_drive();
 
-   chassis.set_drive_pid(4, 55);
+   chassis.set_drive_pid(4, 30);
    chassis.wait_drive();
 
    pros::delay(150);
@@ -306,10 +306,10 @@ void Rave_Auto_Right() {
    chassis.set_swing_pid(ez::LEFT_SWING, -178, 55);
    chassis.wait_drive();
 
-   chassis.set_drive_pid(-18, 30);
+   chassis.set_drive_pid(-17, 30);
    chassis.wait_drive();
 
-   chassis.set_drive_pid(18, 75);
+   chassis.set_drive_pid(17, 75);
    chassis.wait_drive();
 
    chassis.set_turn_pid(-135,65);
@@ -357,10 +357,10 @@ void Rave_Auto_Right() {
 
   //Go for disc on low goal barrier
 
-  chassis.set_drive_pid(12, 50);
+  chassis.set_drive_pid(10, 50);
   chassis.wait_drive();
 
-  chassis.set_turn_pid(270, 65);
+  chassis.set_turn_pid(280, 65);
   chassis.wait_drive();
 
   Intake_Auto(600);
@@ -368,20 +368,43 @@ void Rave_Auto_Right() {
   chassis.set_drive_pid(-56, 75, true);
   chassis.wait_drive();
 
-  //Go for disc on line
-
-  chassis.set_turn_pid(30, 65);
+  chassis.set_drive_pid(4, 30);
   chassis.wait_drive();
 
-  chassis.set_drive_pid(-37, 75, true);
+  //Go for disc on line
+
+  chassis.set_turn_pid(33, 65);
+  chassis.wait_drive();
+
+  chassis.set_drive_pid(-34, 75, true);
   chassis.wait_drive();
 
   //Aim at goal and fire
 
-  chassis.set_drive_pid(6, 55);
+  chassis.set_drive_pid(6, 30);
   chassis.wait_drive();
 
-  chassis.set_turn_pid(205, 65);
+  chassis.set_turn_pid(216, 65);
+  chassis.wait_drive();
+
+  pros::delay(150);
+  Catapult_Fire();
+  pros::delay(500);
+
+  //Go for discs on barrier
+
+  chassis.set_turn_pid(275, 65);
+  chassis.wait_drive();
+
+  chassis.set_drive_pid(-40, 40);
+  chassis.wait_drive();
+
+  chassis.set_drive_pid(40, 75, true);
+  chassis.wait_drive();
+
+  //Fire at goal
+
+  chassis.set_turn_pid(216, 65);
   chassis.wait_drive();
 
   pros::delay(150);
